@@ -20,6 +20,9 @@ logger = logging.getLogger(__name__)
 
 
 def triangle(numbers: list):
+    if len(numbers) > 3:
+        logger.info('Максимально допустимое кол-во значений для треугольника -> 3!')
+        raise OverflowError('Максимально допустимое кол-во значений для треугольника -> 3!')
     a, b, c = numbers[0], numbers[1], numbers[2]
     if a < b + c and b < a + c and c < a + b:
         if a == b == c:
