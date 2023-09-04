@@ -43,3 +43,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     triangle(args.sides)
     # print(args)
+
+    """
+    Пример запуска из терминала -> python .\DZ.py 2 3 4
+
+    """
